@@ -1,13 +1,15 @@
 {
-  "name": "notes",
+  "name": "notes-pwa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "grid-styled": "^2.0.0-11",
+    "localforage": "^1.5.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
+    "redux-persist": "^4.10.1",
     "redux-thunk": "^2.2.0"
   },
   "scripts": {

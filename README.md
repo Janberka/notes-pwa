@@ -1,4 +1,4 @@
-# NotesPWA
+# Notes-PWA
 React, Redux, Styled Components Progressive Web App
 
 ## Installing

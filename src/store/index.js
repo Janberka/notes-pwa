@@ -1,4 +1,6 @@
 import {combineReducers, applyMiddleware, createStore, compose} from 'redux';
+import {persistStore, autoRehydrate} from 'redux-persist'
+import localForage from 'localforage'
 import thunk from 'redux-thunk';
 import notes from './notes';
 
@@ -8,11 +10,15 @@ const rootReducer = combineReducers({
 
 const store = createStore(
     rootReducer,
-    {},
+    undefined,
     compose(
         applyMiddleware(thunk),
-        window.devToolsExtension ? window.devToolsExtension() : f => f
+        autoRehydrate()
     )
 );
+
+persistStore(store, {storage: localForage});
+
+// export default OfflineStore;
 
 export default store;
