@@ -2,6 +2,7 @@
   "name": "notes-pwa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://janberkarikan.com/notes-pwa/",  
   "dependencies": {
     "grid-styled": "^2.0.0-11",
     "localforage": "^1.5.2",
