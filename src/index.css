@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-weight: 500;
+  font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+	color: #999;
+}
+
+a {
+	text-decoration: none;	
+}
+
+button, a {
+	cursor: pointer;	
+}
+
+button, a, textarea {
+	outline: none;
+	color: #999;
+	font: inherit;	
+}
+
+button {
+	border: .2em solid #999;
+	margin: 16px auto;
+	border: none;
+	background: #fff;
+	display: block;
+}
+
+button:focus {
+	outline: none;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
